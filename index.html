@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Book Library</title>
+    <b name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="container">
+    <div id="book-details">
+        <div id ="title"><h2>My book Library</h2></div>
+        <div id="img-container"></div>
+        <button id="add" type="submit"><span style="color: red; margin-right: 3px;"><i class="fa fa-plus"></i></span>ADD YOUR BOOK COLLECTION</button>
+        <div id="book-info">
+            <form id='form' action='/main.js'>
+                <div id="book-info-title">
+                    <h3>New Book</h3>
+                    <span id="close">&times;</span>
+                </div>
+                <input type="text" name="title" placeholder="Book Title" id="bookTitle">
+                <input type="text" name="author" placeholder="Book Author" id="author">
+                <input type="number" name="pages" placeholder="Number of Pages" id="pageNumber">
+                <input type="number" name="pagesRead" placeholder="Pages read" id="pagesRead">
+                <input type="text" name="status" placeholder="Status (Read, Incomplete, Unread)" id="status">
+                <button type="submit" id="submit"><span style="color: red; margin-right: 3px;"><i class="fa fa-plus"></i></span>Add Book</button>
+            </form>
+        </div>
+    </div>
+    <div id="books-container"></div>
+   </div>
+   <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
